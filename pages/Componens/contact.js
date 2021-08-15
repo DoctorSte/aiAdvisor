@@ -94,7 +94,7 @@ export default function Contact() {
         // onChange={handleInput}
       />
 
-      <div className="flex space-x-4 ">
+      {/*     <div className="flex space-x-4 ">
         <label>
           <input
             type="checkbox"
@@ -166,7 +166,8 @@ export default function Contact() {
             Choice 4
           </p>
         </label>
-      </div>
+      </div> *}
+      */}
       <br />
       <div className="flex justify-between">
         <input

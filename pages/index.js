@@ -4,6 +4,7 @@ import ReactPlayer from "react-player";
 import React, { useEffect, useState } from "react";
 import Contact from "./Components/contact";
 import Navbar from "./Components/navbar";
+import Footer from "./Components/footer";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(true);
@@ -15,9 +16,9 @@ export default function Home() {
       </Head>
       <Navbar />
       <main className="flex justify-center items-center min-w-full">
-        <div className="grid grid-flow-col grid-cols-2 gap-3 p-20 max-w-4xl">
+        <div className=" grid grid-flow-col grid-cols-2 gap-3 p-12 max-w-4xl ">
           <div>
-            <h1 className="text-5xl font-bold pb-6 text-transparent bg-clip-text bg-gradient-to-br from-indigo-500 to-red-600">
+            <h1 className="text-5xl font-bold pb-6 text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-red-500 to-yellow-400">
               Get advice for your business idea!
             </h1>
             <p className="text-sm self-center pb-7">
@@ -39,22 +40,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-
-      <footer className="min-w-full flex justify-center border-t-2 items-center text-gray-500 text-center text-xs p-10">
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-          className=" "
-        >
-          Powered by
-          <img
-            src="/Ellipse 1.svg"
-            alt="Vercel Logo"
-            className=" w-10 self-center"
-          />
-        </a>
-      </footer>
+      <Footer />
     </div>
   );
 }
