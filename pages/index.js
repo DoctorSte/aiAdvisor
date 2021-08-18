@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import "tailwindcss/tailwind.css";
 import ReactPlayer from "react-player";
 import React, { useEffect, useState } from "react";
@@ -25,6 +26,14 @@ export default function Home() {
               Enter your idea below and hit submit:
             </p>
             <Contact />
+            <Link href="/ChooseHelper">
+              <a className="mr-4 hover:text-blue-500 transition-all duration-700 ">
+                Link to Helper
+              </a>
+            </Link>
+            <Link href="/paymentPage">
+              <a className="ml-4 hover:text-blue-500">Link to Payment</a>
+            </Link>
           </div>
           <div className="rounded-md overflow-hidden border-2 border-red-300 bg-black ">
             <ReactPlayer
